@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "featuredImage": "https://ikon.mn",
+            "title": "Title",
+            "description": "Description",
+            "shareCount": "1",
+            "commentCount": "10",
+            "createdAt": "2022-03-30",
+            "type": ["recent", "popular"]
+        },
+        {
+            "id": 2,
+            "featuredImage": "https://ikon.mn",
+            "title": "Title",
+            "description": "Description",
+            "shareCount": "1",
+            "commentCount": "10",
+            "createdAt": "2022-03-30",
+            "type": ["recent"]
+        },
+        {
+            "id": 3,
+            "featuredImage": "https://ikon.mn",
+            "title": "Title",
+            "description": "Description",
+            "shareCount": "1",
+            "commentCount": "10",
+            "createdAt": "2022-03-30",
+            "type": ["recent", "popular"]
+        },
+        {
+            "id": 4,
+            "featuredImage": "https://ikon.mn",
+            "title": "Title",
+            "description": "Description",
+            "shareCount": "1",
+            "commentCount": "10",
+            "createdAt": "2022-03-30",
+            "type": ["recent"]
+        }
+    ]
+}

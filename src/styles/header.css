@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-white);
+    font-size: var(--font-size-18);
+    box-shadow: 0 var(--space-5) var(--space-5) 0 var(--color-shadow);
+    margin-bottom: var(--space-10);
+    padding: var(--space-10) var(--space-per-15);
+}
+nav a {
+    margin: var(--space-10);
+    color: var(--color-primary);
+}
+
+.logo {
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    header {
+        padding: 0;
+        padding: var(--space-10) var(--space-per-5);
+    }
+    .logo {
+        max-width: 100px;
+    }
+    nav a {
+        font-size: var(--font-size-14);
+    }
+}
