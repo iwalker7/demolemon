@@ -1,0 +1,24 @@
+{
+    "name": "demolemon",
+    "version": "1.0.0",
+    "description": "demo lemon press",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com-work:iwalker7/demolemon.git"
+    },
+    "author": "itgel G",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "nodemon": "^2.0.16",
+        "swagger-jsdoc": "^6.2.1",
+        "swagger-ui-express": "^4.4.0"
+    }
+}
