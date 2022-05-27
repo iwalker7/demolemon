@@ -1,3 +1,3 @@
-# Demo lemonpress Web
+# Demo Lemon Press Web
 
-[Demo Lemon Static Web App](https://docs.microsoft.com/azure/static-web-apps/overview)
+[Demo Lemon Web App](https://www.lemonpress.me/)
