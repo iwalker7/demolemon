@@ -35,7 +35,6 @@ class PopUpInfo extends HTMLElement {
 
         // Create some CSS to apply to the shadow dom
         const style = document.createElement("style");
-        console.log(style.isConnected);
 
         style.textContent = `
         .wrapper {
@@ -66,7 +65,7 @@ class PopUpInfo extends HTMLElement {
 
         // Attach the created elements to the shadow dom
         shadow.appendChild(style);
-        console.log(style.isConnected);
+
         shadow.appendChild(wrapper);
         wrapper.appendChild(icon);
         wrapper.appendChild(info);
