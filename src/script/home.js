@@ -15,7 +15,6 @@ categories.className = "category";
 const itemsContainer = document.createElement("div");
 itemsContainer.className = "grid-container";
 
-
 function renderItems(items = []) {
     var child = itemsContainer.lastElementChild;
     while (child) {
@@ -35,13 +34,17 @@ function renderItems(items = []) {
         itemsContainer.appendChild(card.render());
     });
 }
-function onCategory(index) {
+function onCategory(label, index) {
     const buttonList = document.querySelectorAll("button");
+
     buttonList.forEach((e, i) => {
-        i === index
-            ? (e.style.backgroundColor = Colors.primary)
-            : ((e.style.backgroundColor = Colors.inActive),
-              (e.style.color = Colors.black));
+        if (e.className === "catButton") {
+            e.innerText === label
+                ? ((e.style.backgroundColor = Colors.primary),
+                  (e.style.color = Colors.white))
+                : ((e.style.backgroundColor = Colors.inActive),
+                  (e.style.color = Colors.black));
+        }
     });
 
     renderItems(homeData[index].items);
@@ -57,7 +60,7 @@ function createListItem(item, index) {
         text: label,
         class: "catButton",
         onPress: function onPress() {
-            onCategory(index);
+            onCategory(label, index);
         },
     });
 
@@ -75,7 +78,10 @@ function createCategories() {
 
     const index = homeData.findIndex((e) => e.category === categoryType);
 
-    onCategory(index > -1 ? index : 0);
+    onCategory(
+        index > -1 ? homeData[index].title : homeData[0].title,
+        index > -1 ? index : 0
+    );
 }
 
 createCategories();

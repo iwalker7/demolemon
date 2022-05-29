@@ -1,138 +1,167 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Dark Mode &amp; CSS Grid Practice</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="styles/team.css">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CodePen - Dark Mode &amp; CSS Grid Practice</title>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="nav">
-	<a href="#">
-	</a>
-	<ul>
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/common.css" />
+        <link rel="stylesheet" href="styles/openprops.css" />
 
-	</ul>
-	<button id="darkmode">
-		<svg class="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
-			<defs></defs>
-			<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-		</svg>
-	</button>
-</div>
-<main>
-	<section>
-		<h1 class="page-title">Манай Баг Хамт Олон</h1>
-	</section>
-	<div class="leadership">
-		<div class="leader">
-			<div class="leader__header">
-				<div class="leader__exp">
-					<span class="years">1</span>
-					<span>National University of Mongolia</span>
-				</div>
-				<a href="#" class="leader__bio">Bio</a>
-			</div>
-			<div class="leader__img">
-				<img src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1624892206068195259.png%3Fres%3D1.00&w=256&q=75" alt="Amanda Maynard">
-			</div>
-			<div class="leader__name">
-				<h2>Ц.Анхбаяр</h2>
-				<p>CEO<em></em></p>
-			</div>
-		</div>
+        <link rel="stylesheet" href="styles/team.css" />
+    </head>
+    <body>
+        <header>
+            <img src="../assets/logo.png" alt="logo" class="logo" />
+            <nav>
+                <a href="home.html">News</a>
+                <a href="podcast.html">Podcasts</a>
+                <button id="darkmode">
+                    <svg
+                        class="moon"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                    >
+                        <defs></defs>
+                        <path
+                            d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+                        ></path>
+                    </svg>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1 class="page-title">Манай Баг Хамт Олон</h1>
+            </section>
+            <div class="leadership">
+                <div class="leader">
+                    <div class="leader__header">
+                        <div class="leader__exp">
+                            <span class="years">1</span>
+                            <span>National University of Mongolia</span>
+                        </div>
+                        <a href="#" class="leader__bio">Bio</a>
+                    </div>
+                    <div class="leader__img">
+                        <img
+                            src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1624892206068195259.png%3Fres%3D1.00&w=256&q=75"
+                            alt="Amanda Maynard"
+                        />
+                    </div>
+                    <div class="leader__name">
+                        <h2>Ц.Анхбаяр</h2>
+                        <p>CEO<em></em></p>
+                    </div>
+                </div>
 
-		<div class="leader">
-			<div class="leader__header">
-				<div class="leader__exp">
-					<span class="years">2</span>
-					<span>National University of Mongolia</span>
-				</div>
-				<a href="#" class="leader__bio">Bio</a>
-			</div>
-			<div class="leader__img">
-				<img src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1624892223709170268.png%3Fres%3D1.00&w=256&q=75" alt="Sammy Cotillard">
-			</div>
-			<div class="leader__name">
-				<h2>Э.Золбаяр</h2>
-				<p><em>CHIEF EDITOR</em></p>
-			</div>
-		</div>
+                <div class="leader">
+                    <div class="leader__header">
+                        <div class="leader__exp">
+                            <span class="years">2</span>
+                            <span>National University of Mongolia</span>
+                        </div>
+                        <a href="#" class="leader__bio">Bio</a>
+                    </div>
+                    <div class="leader__img">
+                        <img
+                            src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1624892223709170268.png%3Fres%3D1.00&w=256&q=75"
+                            alt="Sammy Cotillard"
+                        />
+                    </div>
+                    <div class="leader__name">
+                        <h2>Э.Золбаяр</h2>
+                        <p><em>CHIEF EDITOR</em></p>
+                    </div>
+                </div>
 
-		<div class="leader">
-			<div class="leader__header">
-				<div class="leader__exp">
-					<span class="years">3</span>
-					<span>Hitotsubashi University</span>
-				</div>
-				<a href="#" class="leader__bio">Bio</a>
-			</div>
-			<div class="leader__img">
-				<img src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1639640407007-724660151.jpg%3Fres%3D1.00&w=256&q=75" alt="Todd Fletcher">
-			</div>
-			<div class="leader__name">
-				<h2>А.Баттүвшин</h2>
-				<p><em>Financial Writer</em></p>
-			</div>
-		</div>
+                <div class="leader">
+                    <div class="leader__header">
+                        <div class="leader__exp">
+                            <span class="years">3</span>
+                            <span>Hitotsubashi University</span>
+                        </div>
+                        <a href="#" class="leader__bio">Bio</a>
+                    </div>
+                    <div class="leader__img">
+                        <img
+                            src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1639640407007-724660151.jpg%3Fres%3D1.00&w=256&q=75"
+                            alt="Todd Fletcher"
+                        />
+                    </div>
+                    <div class="leader__name">
+                        <h2>А.Баттүвшин</h2>
+                        <p><em>Financial Writer</em></p>
+                    </div>
+                </div>
 
-		<div class="leader">
-			<div class="leader__header">
-				<div class="leader__exp">
-					<span class="years">4</span>
-					<span>National University Of Mongolia</span>
-				</div>
-				<a href="#" class="leader__bio">Bio</a>
-			</div>
-			<div class="leader__img">
-				<img src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1639640438114-91472317.jpg%3Fres%3D1.00&w=256&q=75" alt="Tiffany Edwards">
-			</div>
-			<div class="leader__name">
-				<h2>Ө.Түмэндарь</h2>
-				<p><em>Financial Writer</em></p>
-			</div>
-		</div>
+                <div class="leader">
+                    <div class="leader__header">
+                        <div class="leader__exp">
+                            <span class="years">4</span>
+                            <span>National University Of Mongolia</span>
+                        </div>
+                        <a href="#" class="leader__bio">Bio</a>
+                    </div>
+                    <div class="leader__img">
+                        <img
+                            src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1639640438114-91472317.jpg%3Fres%3D1.00&w=256&q=75"
+                            alt="Tiffany Edwards"
+                        />
+                    </div>
+                    <div class="leader__name">
+                        <h2>Ө.Түмэндарь</h2>
+                        <p><em>Financial Writer</em></p>
+                    </div>
+                </div>
 
-		<div class="leader">
-			<div class="leader__header">
-				<div class="leader__exp">
-					<span class="years">5</span>
-					<span>National University Of Mongolia</span>
-				</div>
-				<a href="#" class="leader__bio">Bio</a>
-			</div>
-			<div class="leader__img">
-				<img src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1639640497930-675278032.jpg%3Fres%3D1.00&w=256&q=75" alt="Chelsea Clayton">
-			</div>
-			<div class="leader__name">
-				<h2>Э.Анударь</h2>
-				<p><em>Content Producer</em></p>
-			</div>
-		</div>
+                <div class="leader">
+                    <div class="leader__header">
+                        <div class="leader__exp">
+                            <span class="years">5</span>
+                            <span>National University Of Mongolia</span>
+                        </div>
+                        <a href="#" class="leader__bio">Bio</a>
+                    </div>
+                    <div class="leader__img">
+                        <img
+                            src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1639640497930-675278032.jpg%3Fres%3D1.00&w=256&q=75"
+                            alt="Chelsea Clayton"
+                        />
+                    </div>
+                    <div class="leader__name">
+                        <h2>Э.Анударь</h2>
+                        <p><em>Content Producer</em></p>
+                    </div>
+                </div>
 
-		<div class="leader">
-			<div class="leader__header">
-				<div class="leader__exp">
-					<span class="years">6</span>
-					<span>National University Of Mongolia</span>
-				</div>
-				<a href="#" class="leader__bio">Bio</a>
-			</div>
-			<div class="leader__img">
-				<img src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1640316266624-246783912.jpg%3Fres%3D1.00&w=256&q=75" alt="Kevin McCallister">
-			</div>
-			<div class="leader__name">
-				<h2>А.Оюун-Эрдэнэ</h2>
-				<p><em>Graphic Designer</em></p>
-			</div>
-		</div>
-	</div>
-
-</main>
-<!-- partial -->
-  <script  src="script/script.js"></script>
-
-</body>
+                <div class="leader">
+                    <div class="leader__header">
+                        <div class="leader__exp">
+                            <span class="years">6</span>
+                            <span>National University Of Mongolia</span>
+                        </div>
+                        <a href="#" class="leader__bio">Bio</a>
+                    </div>
+                    <div class="leader__img">
+                        <img
+                            src="https://lemonpress.mn/_next/image?url=http%3A%2F%2Fapi.lemonpress.mn%2Fpublic%2Fpictures%2F1640316266624-246783912.jpg%3Fres%3D1.00&w=256&q=75"
+                            alt="Kevin McCallister"
+                        />
+                    </div>
+                    <div class="leader__name">
+                        <h2>А.Оюун-Эрдэнэ</h2>
+                        <p><em>Graphic Designer</em></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- partial -->
+        <script src="./script/darkmode.js"></script>
+    </body>
 </html>

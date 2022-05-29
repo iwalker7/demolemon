@@ -9,6 +9,72 @@
     --color-black: #374957;
     --color-inActive: #e6e6ea;
     --color-shadow: rgba(0, 0, 0, 0.2);
+    --color-background: #fff;
+    --color-transparent: transparent;
+
+    /* font size by pixel */
+    --font-size-10: 10px;
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-24: 24px;
+    --font-size-36: 36px;
+    --font-size-48: 48px;
+
+    /* border radius by pixel */
+    --border-radius-5: 5px;
+    --border-radius-10: 10px;
+    --border-radius-15: 15px;
+    --border-radius-20: 20px;
+    --border-radius-25: 25px;
+    --border-radius-30: 30px;
+    --border-radius-35: 35px;
+    --border-radius-40: 40px;
+    --border-radius-45: 45px;
+    --border-radius-50: 50px;
+
+    /* spacing by pixel */
+    --space-5: 5px;
+    --space-10: 10px;
+    --space-15: 15px;
+    --space-20: 20px;
+    --space-25: 25px;
+    --space-30: 30px;
+    --space-35: 35px;
+    --space-40: 40px;
+    --space-45: 45px;
+    --space-50: 50px;
+
+    /* spacing by percentage */
+    --space-per-5: 5%;
+    --space-per-10: 10%;
+    --space-per-15: 15%;
+    --space-per-20: 20%;
+    --space-per-25: 25%;
+    --space-per-30: 30%;
+    --space-per-35: 35%;
+    --space-per-40: 40%;
+    --space-per-45: 45%;
+    --space-per-50: 50%;
+
+    --font-family: Verdana;
+    /* , Geneva, Tahoma, sans-serif; */
+}
+
+.dark:root {
+    /* colors */
+    --color-primary: #0a1e7f;
+    --color-primaryDark: #0c1c7c;
+    --color-accent: #ffda00;
+    --color-accentDark: #ff4676;
+    --color-textPrimary: #fff;
+    --color-white: #ffffff;
+    --color-black: #374957;
+    --color-inActive: #a5a5a5;
+    --color-shadow: rgba(0, 0, 0, 0.2);
+    --color-background: #0c1c7c;
+    --color-transparent: transparent;
 
     /* font size by pixel */
     --font-size-10: 10px;

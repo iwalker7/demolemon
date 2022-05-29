@@ -3,10 +3,12 @@ body {
     margin: 0;
     font-family: var(--font-family);
     color: var(--color-textPrimary);
+    background-color: var(--color-background);
 }
 body main {
     display: grid;
     padding: 0 var(--space-per-15);
+    background-color: var(--color-background);
 }
 
 /* items container */
@@ -68,6 +70,7 @@ ul li {
         display: flex;
         padding: 0 var(--space-per-5);
         flex-direction: column;
+        background-color: var(--color-background);
     }
 
     ul li {
