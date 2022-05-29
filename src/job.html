@@ -1,46 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<body>
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-            name="description"
-            content="Author: Web dev demo, Version: v2, Status: alpha"
-        />
-        <link rel="stylesheet" href="./styles/footer.css" />
+        <title>Lemon press v2</title>
+        <link rel="stylesheet" href="styles/common.css" />
+        <link rel="stylesheet" href="styles/home.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/footer.css" />
+        <link rel="stylesheet" href="styles/openprops.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        <title>Lemon press v2</title>
-        <style></style>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script type="module" src="./script/home.js"></script>
     </head>
-    <body>
-        <header>
-            <img
-                src="https://lemonpress.mn/icon/lemonpress@2x.png"
-                alt="logo"
-                width="200px"
-            />
-              <p>
-                  Мэдээлэл ороогүй байна.
-              </p>
-              <footer>
-                <body>
-                    <div class="footer-basic">
-                        <footer>
-                            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><a href="#">Home</a></li>
-                                <li class="list-inline-item"><a href="#">Support</a></li>
-                                <li class="list-inline-item"><a href="#">About</a></li>
-                                <li class="list-inline-item"><a href="#">Terms</a></li>
-                                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                            </ul>
-                            <p class="copyright">Lemonpress © 2022</p>
-                        </footer>
-                    </div>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-                </body>
-            </footer>
+  <div class="col-md-6 offset-md-3 mt-5">
+    <a target="_blank" href="https://getform.io?ref=codepenHTML">
+      <img alt="Getform.io Logo" src="data:image/jpeg;base64,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">
+    </a>
+    <br>
+    <a target="_blank" href="https://getform.io?ref=codepenHTML" class="mt-3 d-flex">Getform.io | Get your free endpoint now</a>
+    <h1>Simple Job Application Form</h1>
+    <form accept-charset="UTF-8" action="https://getform.io/f/{your-form-endpoint-goes-here}" method="POST" enctype="multipart/form-data" target="_blank">
+      <div class="form-group">
+        <label for="exampleInputName">Full Name</label>
+        <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="Enter your name and surname" required="required">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" required="required">Email address</label>
+        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" name="address" class="form-control" id="inputAddress" placeholder="">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" name="city" class="form-control" id="inputCity" placeholder="Ulaanbaatar">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" name="zip" class="form-control" id="inputZip" placeholder="11000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+        <div class="col-10">
+          <input class="form-control" name="tel" type="tel" value="(+976)-555-5555" id="example-tel-input">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="example-date-input" class="col-3 col-form-label">Start Date</label>
+        <div class="col-10">
+          <input class="form-control" name="starting_date" type="date" value="2022-05-29" id="example-date-input">
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <label class="mr-4">Upload your CV:</label>
+        <input type="file" name="file">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 </body>
+<footer>
+    <body>
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="https://www.instagram.com/lemonpress.mn/"><i class="icon ion-social-instagram"></i></a><a href="https://www.facebook.com/lemonpress.mn"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/lemonpressinc"><i class="icon ion-social-twitter"></i></a><a href="https://mn.linkedin.com/company/lemonpress"><i class="icon ion-social-linkedin"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#">Support</a></li>
+                    <li class="list-inline-item"><a href="#">About</a></li>
+                    <li class="list-inline-item"><a href="#">Terms</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">Lemonpress © 2022</p>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</footer>
 </html>
